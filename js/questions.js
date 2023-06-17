@@ -195,7 +195,7 @@ const questions = [
   {
     prompt: 'Question 1: Which cipher technique involves shifting the letters of the alphabet by a fixed number of positions?',
     options: ['A) Caesar cipher',
-      'B) VigenÃ¨re cipher',
+      'B) Vigenère cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'A) Caesar cipher',
@@ -204,16 +204,16 @@ const questions = [
   {
     prompt: 'Question 2: Which cipher technique uses a series of interwoven Caesar ciphers based on a keyword?',
     options: ['A) Caesar cipher',
-      'B) VigenÃ¨re cipher',
+      'B) Vigenère cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
-    correctAnswer: 'B) VigenÃ¨re cipher',
+    correctAnswer: 'B) Vigenère cipher',
     cashPrize: 200
   },
   {
     prompt: 'Question 3: Which cipher technique uses a mathematical algorithm that relies on the difficulty of factoring large composite numbers?',
     options: ['A) Caesar cipher',
-      'B) VigenÃ¨re cipher',
+      'B) Vigenère cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'C) RSA encryption',
@@ -222,7 +222,7 @@ const questions = [
   {
     prompt: 'Question 4: Which cipher technique is used for secure key exchange between two parties over an insecure channel?',
     options: ['A) Caesar cipher',
-      'B) VigenÃ¨re cipher',
+      'B) Vigenère cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'D) Diffie-Hellman key exchange',
@@ -231,7 +231,7 @@ const questions = [
   {
     prompt: 'Question 5: Which cipher technique involves substituting one letter or character with another according to a predefined rule?',
     options: ['A) Caesar cipher',
-      'B) VigenÃ¨re cipher',
+      'B) Vigenère cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'A) Caesar cipher',

@@ -107,41 +107,42 @@ const questions = [
     cashPrize: 100
   },
   {
-    prompt: 'Question 2: Which property ensures that it is computationally infeasible to determine the input to a hash function given its output?',
-    options: ['A) Pre-image resistance',
-      'B) Collision resistance',
-      'C) Key generation',
-      'D) Second pre-image resistance'],
-    correctAnswer: 'A) Pre-image resistance',
-    cashPrize: 200
-  },
-  {
-    prompt: 'Question 3: Which property ensures that it is computationally infeasible to find two different inputs that produce the same hash output?',
-    options: ['A) Pre-image resistance',
-      'B) Collision resistance',
-      'C) Key generation',
-      'D) Second pre-image resistance'],
-    correctAnswer: 'B) Collision resistance',
-    cashPrize: 300
-  },
-  {
-    prompt: 'Question 4: Which property ensures that given an input and its hash output, it is computationally infeasible to find another input with the same hash?',
-    options: ['A) Pre-image resistance',
-      'B) Collision resistance',
-      'C) Key generation',
-      'D) Second pre-image resistance'],
-    correctAnswer: 'D) Second pre-image resistance',
-    cashPrize: 400
-  },
-  {
-    prompt: 'Question 5: Which of the following is an example of a widely used cryptographic hash function?',
+    prompt: 'Question 2: Which of the following is an example of a widely used cryptographic hash function?',
     options: ['A) SHA-256',
       'B) DES',
       'C) AES',
       'D) RSA'],
     correctAnswer: 'A) SHA-256',
+    cashPrize: 200
+  },
+  {
+    prompt: 'Question 3: Which property ensures that it is computationally infeasible to determine the input to a hash function given its output?',
+    options: ['A) Pre-image resistance',
+      'B) Collision resistance',
+      'C) Key generation',
+      'D) Second pre-image resistance'],
+    correctAnswer: 'A) Pre-image resistance',
+    cashPrize: 300
+  },
+  {
+    prompt: 'Question 4: Which property ensures that it is computationally infeasible to find two different inputs that produce the same hash output?',
+    options: ['A) Pre-image resistance',
+      'B) Collision resistance',
+      'C) Key generation',
+      'D) Second pre-image resistance'],
+    correctAnswer: 'B) Collision resistance',
+    cashPrize: 400
+  },
+  {
+    prompt: 'Question 5: Which property ensures that given an input and its hash output, it is computationally infeasible to find another input with the same hash?',
+    options: ['A) Pre-image resistance',
+      'B) Collision resistance',
+      'C) Key generation',
+      'D) Second pre-image resistance'],
+    correctAnswer: 'D) Second pre-image resistance',
     cashPrize: 500
   },
+  
   // Category:  HTTPS
 
   {

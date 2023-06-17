@@ -68,7 +68,7 @@ const questions = [
     cashPrize: 200
   },
   {
-    prompt: 'Question 3: Which encryption technique provides better security: symmetric encryption or asymmetric encryption?',
+    prompt: 'Question 3: Which encryption technique best fit for security: symmetric encryption or asymmetric encryption?',
     options: ['A) Symmetric encryption',
       'B) Asymmetric encryption',
       'C) Both provide the same level of security',

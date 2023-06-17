@@ -3,21 +3,21 @@ const questions = [
 
   {
     prompt: 'Question 1: Which cryptographic technique converts plaintext into a non-readable form to protect sensitive information?',
-    options: ['A) Symmetric encryption',
-      'B) Asymmetric encryption',
-      'C) Hashing',
-      'D) Steganography'],
-    correctAnswer: 'A) Symmetric encryption',
+    options: ['A) Hashing',
+      'B) Decryption',
+      'C) Encryption',
+      'D) Key generation'],
+    correctAnswer: 'C) Encryption',
     cashPrize: 100
   },
   {
-    prompt: 'Question 2: Which cryptographic process takes a hash function and converts it back to its original plaintext form?',
+    prompt: 'Question 2: Which cryptographic process transforms encrypted information into its original format?',
     options: ['A) Encryption',
       'B) Decryption',
       'C) Hashing',
       'D) Key generation'],
     correctAnswer: 'B) Decryption',
-    cashPrize: 100
+    cashPrize: 200
   },
   {
     prompt: 'Question 3: Which cryptographic technique uses two different keys for encryption and decryption?',
@@ -26,7 +26,7 @@ const questions = [
       'C) Hashing',
       'D) Salting'],
     correctAnswer: 'B) Asymmetric encryption',
-    cashPrize: 100
+    cashPrize: 300
   },
   {
     prompt: 'Question 4: Which cryptographic process converts plaintext into a fixed-length string of characters that represents the original data?',
@@ -35,7 +35,7 @@ const questions = [
       'C) Key generation',
       'D) Hashing'],
     correctAnswer: 'D) Hashing',
-    cashPrize: 100
+    cashPrize: 400
   },
   {
     prompt: 'Question 5: Which cryptographic technique is commonly used to verify the integrity of data?',
@@ -44,7 +44,7 @@ const questions = [
       'C) Hashing',
       'D) Salting'],
     correctAnswer: 'C) Hashing',
-    cashPrize: 100
+    cashPrize: 500
   },
 
   // Category: Symmetric and Asymmetric Encryption
@@ -65,7 +65,7 @@ const questions = [
       'C) Hashing',
       'D) Quantum encryption'],
     correctAnswer: 'B) Asymmetric encryption',
-    cashPrize: 100
+    cashPrize: 200
   },
   {
     prompt: 'Question 3: Which encryption technique provides better security: symmetric encryption or asymmetric encryption?',
@@ -74,7 +74,7 @@ const questions = [
       'C) Both provide the same level of security',
       'D) It depends on the specific use case'],
     correctAnswer: 'D) It depends on the specific use case',
-    cashPrize: 100
+    cashPrize: 300
   },
   {
     prompt: 'Question 4: Which encryption technique is more computationally expensive: symmetric encryption or asymmetric encryption?',
@@ -83,7 +83,7 @@ const questions = [
       'C) Both have similar computational costs',
       'D) It depends on the specific algorithm used'],
     correctAnswer: 'B) Asymmetric encryption',
-    cashPrize: 100
+    cashPrize: 400
   },
   {
     prompt: 'Question 5: Which encryption technique is commonly used for secure communication over an insecure channel?',
@@ -92,7 +92,7 @@ const questions = [
       'C) Hashing',
       'D) Steganography'],
     correctAnswer: 'B) Asymmetric encryption',
-    cashPrize: 100
+    cashPrize: 500
   },
 
   // Category: Hash Functions
@@ -113,7 +113,7 @@ const questions = [
       'C) Key generation',
       'D) Second pre-image resistance'],
     correctAnswer: 'A) Pre-image resistance',
-    cashPrize: 100
+    cashPrize: 200
   },
   {
     prompt: 'Question 3: Which property ensures that it is computationally infeasible to find two different inputs that produce the same hash output?',
@@ -122,7 +122,7 @@ const questions = [
       'C) Key generation',
       'D) Second pre-image resistance'],
     correctAnswer: 'B) Collision resistance',
-    cashPrize: 100
+    cashPrize: 300
   },
   {
     prompt: 'Question 4: Which property ensures that given an input and its hash output, it is computationally infeasible to find another input with the same hash?',
@@ -131,7 +131,7 @@ const questions = [
       'C) Key generation',
       'D) Second pre-image resistance'],
     correctAnswer: 'D) Second pre-image resistance',
-    cashPrize: 100
+    cashPrize: 400
   },
   {
     prompt: 'Question 5: Which of the following is an example of a widely used cryptographic hash function?',
@@ -140,7 +140,7 @@ const questions = [
       'C) AES',
       'D) RSA'],
     correctAnswer: 'A) SHA-256',
-    cashPrize: 100
+    cashPrize: 500
   },
   // Category:  HTTPS
 
@@ -160,7 +160,7 @@ const questions = [
       'C) It verifies the server\'s SSL certificate',
       'D) It generates session keys for secure communication'],
     correctAnswer: 'B) It decrypts information sent from the client to the server',
-    cashPrize: 100
+    cashPrize: 200
   },
   {
     prompt: 'Question 3: What is the purpose of the public key in HTTPS?',
@@ -169,7 +169,7 @@ const questions = [
       'C) It verifies the server\'s SSL certificate',
       'D) It generates session keys for secure communication'],
     correctAnswer: 'A) It encrypts information sent from the server to the client',
-    cashPrize: 100
+    cashPrize: 300
   },
   {
     prompt: 'Question 4: During the TLS handshake, what is the role of the "client hello" message?',
@@ -178,7 +178,7 @@ const questions = [
       'C) It initiates the handshake and provides information about the client\'s supported cipher suites',
       'D) It generates session keys for secure communication'],
     correctAnswer: 'C) It initiates the handshake and provides information about the client\'s supported cipher suites',
-    cashPrize: 100
+    cashPrize: 400
   },
   {
     prompt: 'Question 5: What is the final step in the TLS handshake process?',
@@ -187,7 +187,7 @@ const questions = [
       'C) The client and server exchange "finished" messages encrypted with session keys',
       'D) The client and server agree on a cipher suite to use for secure communication'],
     correctAnswer: 'C) The client and server exchange "finished" messages encrypted with session keys',
-    cashPrize: 100
+    cashPrize: 500
   },
 
   // Category: Cipher Techniques
@@ -195,7 +195,7 @@ const questions = [
   {
     prompt: 'Question 1: Which cipher technique involves shifting the letters of the alphabet by a fixed number of positions?',
     options: ['A) Caesar cipher',
-      'B) Vigenère cipher',
+      'B) VigenÃ¨re cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'A) Caesar cipher',
@@ -204,38 +204,38 @@ const questions = [
   {
     prompt: 'Question 2: Which cipher technique uses a series of interwoven Caesar ciphers based on a keyword?',
     options: ['A) Caesar cipher',
-      'B) Vigenère cipher',
+      'B) VigenÃ¨re cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
-    correctAnswer: 'B) Vigenère cipher',
-    cashPrize: 100
+    correctAnswer: 'B) VigenÃ¨re cipher',
+    cashPrize: 200
   },
   {
     prompt: 'Question 3: Which cipher technique uses a mathematical algorithm that relies on the difficulty of factoring large composite numbers?',
     options: ['A) Caesar cipher',
-      'B) Vigenère cipher',
+      'B) VigenÃ¨re cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'C) RSA encryption',
-    cashPrize: 100
+    cashPrize: 300
   },
   {
     prompt: 'Question 4: Which cipher technique is used for secure key exchange between two parties over an insecure channel?',
     options: ['A) Caesar cipher',
-      'B) Vigenère cipher',
+      'B) VigenÃ¨re cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'D) Diffie-Hellman key exchange',
-    cashPrize: 100
+    cashPrize: 400
   },
   {
     prompt: 'Question 5: Which cipher technique involves substituting one letter or character with another according to a predefined rule?',
     options: ['A) Caesar cipher',
-      'B) Vigenère cipher',
+      'B) VigenÃ¨re cipher',
       'C) RSA encryption',
       'D) Diffie-Hellman key exchange'],
     correctAnswer: 'A) Caesar cipher',
-    cashPrize: 100
+    cashPrize: 500
   },
 
   // Category: Cryptographic Attacks
@@ -256,7 +256,7 @@ const questions = [
       'C) Birthday attack',
       'D) Side-channel attack'],
     correctAnswer: 'D) Side-channel attack',
-    cashPrize: 100
+    cashPrize: 200
   },
   {
     prompt: 'Question 3: Which cryptographic attack attempts to find two different inputs that produce the same hash output?',
@@ -265,7 +265,7 @@ const questions = [
       'C) Collision attack',
       'D) Side-channel attack'],
     correctAnswer: 'C) Collision attack',
-    cashPrize: 100
+    cashPrize: 300
   },
   {
     prompt: 'Question 4: Which cryptographic attack analyzes the statistical properties of a cryptographic algorithm to deduce the key used in the encryption process?',
@@ -274,7 +274,7 @@ const questions = [
       'C) Birthday attack',
       'D) Side-channel attack'],
     correctAnswer: 'B) Differential cryptanalysis',
-    cashPrize: 100
+    cashPrize: 400
   },
   {
     prompt: 'Question 5: Which cryptographic attack aims to guess or infer the secret key by observing the physical implementation of a cryptographic system?',
@@ -283,7 +283,7 @@ const questions = [
       'C) Birthday attack',
       'D) Side-channel attack'],
     correctAnswer: 'D) Side-channel attack',
-    cashPrize: 100
+    cashPrize: 500
   }
 ];
 
